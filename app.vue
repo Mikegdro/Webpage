@@ -1,6 +1,9 @@
+<script setup lang="ts">
+
+  const router = useRouter();
+  
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NuxtPage />
 </template>
