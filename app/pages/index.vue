@@ -1,26 +1,18 @@
+<script setup lang="ts">
+const { data: home } = await useAsyncData(() => queryCollection('pages').path('/').first())
+
+useSeoMeta({
+  title: home.value?.title,
+  description: home.value?.description
+})
+
+</script>
+
 <template>
-  <ClientSettings />
-  <div class="flex flex-col items-center justify-center gap-4 h-screen">
-    <h1 class="font-bold text-2xl text-(--ui-primary)">
-      Nuxt UI - Starter
-    </h1>
+  <ContentRenderer v-if="home" :value="home" />
+  <div v-else>Home not found</div>
 
-    <div class="flex items-center gap-2">
-      <UButton
-        label="Documentation"
-        icon="i-lucide-square-play"
-        to="https://ui.nuxt.com/getting-started/installation/nuxt"
-        target="_blank"
-      />
-
-      <UButton
-        label="GitHub"
-        color="neutral"
-        variant="outline"
-        icon="i-simple-icons-github"
-        to="https://github.com/nuxt/ui"
-        target="_blank"
-      />
-    </div>
+  <div class="h-60">
+    
   </div>
 </template>
