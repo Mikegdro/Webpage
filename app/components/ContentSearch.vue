@@ -9,6 +9,8 @@ const query = ref('');
 //Recogemos los datos a buscar
 const { data } = await useAsyncData('search', () => queryCollectionSearchSections('pages'));
 
+const { data: pages } = await useAsyncData('pages', () => queryCollection('pages').all());
+
 const minisearch = new MiniSearch({
     fields: ['title', 'content'],
     storeFields: ['title', 'content'],
@@ -17,6 +19,7 @@ const minisearch = new MiniSearch({
         fuzzy: 0.2
     }
 });
+
 
 minisearch.addAll(toValue(data.value));
 const result = computed(() => minisearch.search(toValue(query)));
@@ -29,14 +32,10 @@ defineShortcuts({
     }
 })
 
-function onSelect() {
-    searchTerm.value = ''
-}
-
 </script>
 
 <template>
-    <UContainer class="p-0 w-1/2 fixed top-5 right-0 left-0 flex flex-col justify-center rounded-md">
+    <UContainer class="p-0 w-1/2 fixed top-5 right-0 z-1 left-0 flex flex-col justify-center rounded-md">
         
         <UInput ref="input" v-model="query" icon="i-lucide-search" placeholder="Search..." >
             <template #trailing>

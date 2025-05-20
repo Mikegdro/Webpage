@@ -11,8 +11,4 @@ useSeoMeta({
 <template>
   <ContentRenderer v-if="home" :value="home" />
   <div v-else>Home not found</div>
-
-  <div class="h-60">
-    
-  </div>
 </template>
