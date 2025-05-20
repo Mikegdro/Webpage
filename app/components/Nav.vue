@@ -8,12 +8,8 @@
         return queryCollection('pages').select('title','body', 'meta').all()
     })
 
-    const click = () => {
-        console.log('Hi!')
-    }
-
     // Ejecutamos la funcion de carga del nav
-    useLoadNav(pages, items, click);
+    useLoadNav(pages, items);
 
 </script>
 

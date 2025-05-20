@@ -9,7 +9,7 @@ const query = ref('');
 //Recogemos los datos a buscar
 const { data } = await useAsyncData('search', () => queryCollectionSearchSections('pages'));
 
-const { data: pages } = await useAsyncData('pages', () => queryCollection('pages').all());
+console.log(data.value)
 
 const minisearch = new MiniSearch({
     fields: ['title', 'content'],

@@ -1,18 +1,16 @@
-export function useLoadNav(pages: { value: any; }, items: { value: { label: any; icon: string; active: boolean; to: any; children: { label: string; to: string; }[]; }[]; }, click: () => void) {
+export function useLoadNav(pages: { value: any; }, items: { value: { label: any; icon: string; class: string; active: boolean; to: any; children: { label: string; to: string; }[]; }[]; }) {
 
     const route = useRoute();
 
     if (!pages.value || !items) {
         return;
     }
-
-    console.log(route.fullPath, pages.value)
     
     // Recorremos las páginas
     for (let page of pages?.value) {
 
         // Variable para almacenar los hijos de la ruta
-        let childList: Array<{ label: string, to: string, active: boolean }> = [];
+        let childList: Array<{ label: string, to: string, active: boolean, class: string }> = [];
 
         // Sacamos la tabla de contenidos de la página
         for (let child of page.body.toc.links) {
@@ -20,6 +18,7 @@ export function useLoadNav(pages: { value: any; }, items: { value: { label: any;
                 label: child.text,
                 to: `${page.path}#${child.id}`,
                 active: route.fullPath === `${page.path}#${child.id}`,
+                class: 'childNavItem'
             });
         }
 
@@ -29,7 +28,8 @@ export function useLoadNav(pages: { value: any; }, items: { value: { label: any;
             icon: 'i-lucide-book-open',
             to: page.path,
             active: route.path === page.path,
-            children: childList
+            children: childList,
+            class: 'parentNavItem'
         })
         
     }
