@@ -11,5 +11,11 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
   compatibilityDate: '2024-11-27',
-  ssr: false
+  ssr: false,
+  app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in'
+    }
+  }
 })
