@@ -1,0 +1,1 @@
+import{_ as s,J as a,e as o,w as n,a8 as c,ae as r}from"./Vbwk_DTN.js";const _={};function f(e,l){const t=r;return o(),a(t,{class:"mt-20"},{default:n(()=>[c(e.$slots,"default")]),_:3})}const i=s(_,[["render",f]]);export{i as default};
