@@ -1,0 +1,1 @@
+import{_ as o}from"./D63Uc-sI.js";import{_ as a,M as r,e as c,w as l,h as s,N as t}from"./Ygsf8HB6.js";const _={};function i(e,f){const n=o;return c(),r(n,null,{default:l(()=>[s("h2",null,[t(e.$slots,"title")]),s("p",null,[t(e.$slots,"description")]),t(e.$slots,"default")]),_:3})}const p=Object.assign(a(_,[["render",i]]),{__name:"PageSection"});export{p as default};
