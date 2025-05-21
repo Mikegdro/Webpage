@@ -7,22 +7,26 @@ import MiniSearch from 'minisearch';
 const query = ref('');
 
 //Recogemos los datos a buscar
-const { data } = await useAsyncData('search', () => queryCollectionSearchSections('pages'));
+const { data } = await useAsyncData('search', () => queryCollection('blog').all());
 
 console.log(data.value)
 
 const minisearch = new MiniSearch({
-    fields: ['title', 'content'],
-    storeFields: ['title', 'content'],
+    fields: ['title', 'description'],
+    storeFields: ['title', 'description', 'path', 'author', 'date'],
     searchOptions: {
         prefix: true,
         fuzzy: 0.2
     }
 });
 
+if (data.value) {
+    minisearch.addAll(toValue(data.value));
+}
 
-minisearch.addAll(toValue(data.value));
 const result = computed(() => minisearch.search(toValue(query)));
+
+console.log(result.value)
 
 const input = useTemplateRef('input')
 
@@ -31,6 +35,10 @@ defineShortcuts({
         input.value?.inputRef?.focus()
     }
 })
+
+function closeSearcher() {
+    query.value = ''
+}
 
 </script>
 
@@ -45,9 +53,10 @@ defineShortcuts({
         </UInput>
 
         <div class="bg-elevated rounded-md flex flex-col">
-            <ULink  v-for="link of result" :key="link.id" class="mt-2 p-2 hover:bg-accented rounded-md" as="button" :to="link.id">
+            <ULink  v-for="link of result" :key="link.id" class="mt-2 p-2 hover:bg-accented rounded-md" as="button" :to="link.path" @click="closeSearcher()">
                 {{ link.title }}
-                <p class="text-gray-500 text-xs">{{ link.content }}</p>
+                <p class="text-neutral-500 text-xs">{{ link.author }}</p>
+                <p class="text-neutral-500 text-xs">{{ link.date }}</p>
             </ULink>
         </div>
         

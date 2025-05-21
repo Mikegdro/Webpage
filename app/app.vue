@@ -1,7 +1,8 @@
 <template>
   <UApp>
-    <ContentSearch />
-    <ClientSettings />
-    <NuxtPage />
+    <NuxtLayout class="bg-default" data-vaul-drawer-wrapper>
+      <ClientSettings />
+      <NuxtPage />
+    </NuxtLayout>
   </UApp>
 </template>

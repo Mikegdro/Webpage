@@ -5,7 +5,7 @@
 
     // Recogemos la información de las páginas
     const { data: pages } = await useAsyncData('pages', () => {
-        return queryCollection('pages').select('title','body', 'meta').all()
+        return queryCollection('pages').all()
     })
 
     // Ejecutamos la funcion de carga del nav

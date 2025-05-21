@@ -14,6 +14,7 @@ export function useLoadNav(pages: { value: any; }, items: { value: { label: any;
 
         // Sacamos la tabla de contenidos de la página
         for (let child of page.body.toc.links) {
+
             childList.push({
                 label: child.text,
                 to: `${page.path}#${child.id}`,

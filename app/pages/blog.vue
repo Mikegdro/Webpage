@@ -1,13 +1,17 @@
 <script setup lang="ts">
-const { data: home } = await useAsyncData(() => queryCollection('pages').path('/blog').first())
+const { data } = await useAsyncData('blog-content', () => queryCollection('pages').path('/blog').first())
 
 useSeoMeta({
-  title: home.value?.title,
-  description: home.value?.description
+  title: data.value?.title,
+  description: data.value?.description
 })
+
 </script>
 
 <template>
-    <ContentRenderer v-if="home" :value="home" />
+  <UContainer>
+    <ContentSearch />
+    <ContentRenderer v-if="data" :value="data" />
     <div v-else>Home not found</div>
+  </UContainer>
 </template>

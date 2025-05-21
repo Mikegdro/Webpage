@@ -4,11 +4,13 @@ const route = useRoute()
 
 const { data: post } = await useAsyncData(route.path, () => queryCollection('blog').path(route.path).first())
 
+if(!post.value) {
+    throw createError({ statusCode: 404, statusMessage: 'Post not found', fatal: true })
+}
+
 definePageMeta({
     layout: 'blog-post'
 })
-
-console.log(post.value)
 
 useSeoMeta({
     title: post.value?.title,
@@ -19,11 +21,11 @@ useSeoMeta({
 </script>
 
 <template>
-    <NuxtLayout>
+    <div>
         <div v-if="post?.image" class="image w-1/2">
             <img :src="post?.image" class="rounded-md" />
         </div>
         <ContentRenderer v-if="post" :value="post" />
         <div v-else> No post found </div>
-    </NuxtLayout>
+    </div>
 </template>
