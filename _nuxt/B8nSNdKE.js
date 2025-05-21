@@ -1,1 +1,0 @@
-import{_ as s,J as a,e as o,w as c,h as n,a8 as r,ae as _}from"./C_m0Q1h4.js";const l={},d={class:"text-center text-3xl text-bold"};function f(e,i){const t=_;return o(),a(t,{class:"mt-5 h-screen"},{default:c(()=>[n("h2",d,[r(e.$slots,"default")])]),_:3})}const u=Object.assign(s(l,[["render",f]]),{__name:"About"});export{u as default};
