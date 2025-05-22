@@ -1,0 +1,1 @@
+import{r as t}from"./BLhaFSX9.js";import{_ as r,d as s,e as o}from"./BAYArnor.js";import"./C--SOlcO.js";const c={},n={class:"text-md mt-5 mb-2"};function a(e,m){return o(),s("p",n,[t(e.$slots,"default",{mdcUnwrap:"p"})])}const f=Object.assign(r(c,[["render",a]]),{__name:"ProseP"});export{f as default};
