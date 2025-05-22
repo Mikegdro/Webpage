@@ -17,5 +17,25 @@ export default defineNuxtConfig({
       name: 'page',
       mode: 'out-in'
     }
+  },
+  mdc: {
+    components: {
+      prose: true
+    }
+  },
+  content: {
+    build: {
+      markdown: {
+        toc: {
+          depth: 3,
+          searchDepth: 3
+        }
+      }
+    }
+  },
+  fonts: {
+    assets: {
+      prefix: '/_fonts'
+    }
   }
 })

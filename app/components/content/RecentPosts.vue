@@ -5,6 +5,6 @@
 
 <template>
     <UContainer>
-        Posts
+        <slot />
     </UContainer>
 </template>

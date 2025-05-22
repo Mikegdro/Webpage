@@ -1,0 +1,20 @@
+---
+title: Cívica
+description: Azure Cloud Developer
+from: November 2023
+to: Today
+image: /images/civica.png
+---
+
+Project for a major Consumer Electrodomestic chain in Spain, providing tech support
+infra-structure advice, cost reduction & new integrations with other companies.
+
+Tecnologies used:
+- Azure Portal
+- Azure Logic apps
+- Azure DB
+- C# & .NET for Azure Functions
+
+Methodologies:
+ - Serverless
+ - Reactive UI and UX

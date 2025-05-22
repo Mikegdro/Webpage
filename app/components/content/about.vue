@@ -3,24 +3,19 @@
 </script>
 
 <template>
-    <div class="p-15">
-        <UContainer class="h-screen flex flex-col">
+    <div class="md:p-15 px-5 py-15 flex flex-col lg:flex-row gap-10">
+        <UContainer class="flex flex-col">
             <!-- Title -->
-            <h2 class="text-left text-5xl font-bold">
-                <slot />
-            </h2>
+            <slot name="title" />
 
             <!-- Paragraphs -->
-            <div class="mt-10 flex flex-col gap-10 text-lg font-thin">
-                <p>
-                    <slot name="introduction" />
-                </p>
-                <p v-if="$slots.work">
-                    <slot name="work" mdc-unwrap="p"/>
-                </p>
-            </div>
+            <slot name="introduction" />
+            <slot name="work"/>
 
             <!-- End -->
+        </UContainer>
+        <UContainer>
+            <hobbies />
         </UContainer>
     </div>
 </template>

@@ -15,10 +15,10 @@ function downloadCV(cv: string) {
                 <slot></slot>
             </div>
             <img :src="avatar" class="w-30 rounded-full aspect-square object-cover"/>
-            <h2 class="text-6xl font-extrabold">
-                <slot name="title" mdc-unwrap="h2" />
-            </h2>
-            <slot name="description" />
+            <slot name="title" />
+            <p>
+                <slot name="description" mdc-unwrap="p" />
+            </p>
             <UBadge>
                 <slot name="work" mdc-unwrap="p" />
             </UBadge>

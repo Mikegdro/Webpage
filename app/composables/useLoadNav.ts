@@ -12,6 +12,14 @@ export function useLoadNav(pages: { value: any; }, items: { value: { label: any;
         // Variable para almacenar los hijos de la ruta
         let childList: Array<{ label: string, to: string, active: boolean, class: string }> = [];
 
+        // Creamos a mano la ruta índice
+        childList.push({
+            label: page.title,
+            to: page.path,
+            active: route.fullPath === page.path,
+            class: 'childNavItem'
+        })
+
         // Sacamos la tabla de contenidos de la página
         for (let child of page.body.toc.links) {
 
