@@ -1,1 +1,0 @@
-import{_ as e}from"./D63Uc-sI.js";import{_ as s,M as a,e as n,w as r,N as c}from"./Ygsf8HB6.js";const _={};function f(t,l){const o=e;return n(),a(o,{class:"mt-20"},{default:r(()=>[c(t.$slots,"default")]),_:3})}const d=s(_,[["render",f]]);export{d as default};

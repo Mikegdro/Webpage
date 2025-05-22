@@ -1,0 +1,1 @@
+import{r as t}from"./DA5OXoPI.js";import{_ as o,d as r,e as s}from"./WsF0hFD9.js";import"./BYZO6oOw.js";const n={},a={class:"text-5xl sm:text-6xl font-extrabold"};function c(e,_){return s(),r("h1",a,[t(e.$slots,"default",{mdcUnwrap:"h1"})])}const f=Object.assign(o(n,[["render",c]]),{__name:"ProseH1"});export{f as default};
