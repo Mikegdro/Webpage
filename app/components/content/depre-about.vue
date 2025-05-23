@@ -3,8 +3,8 @@
 </script>
 
 <template>
-    <div class="md:p-15 px-5 py-15 flex flex-col lg:flex-row gap-10">
-        <UContainer class="flex flex-col">
+    <div class="md:px-15 py-20 flex flex-col xl:flex-row gap-10">
+        <UContainer class="flex flex-col basis-1/2">
             <!-- Title -->
             <slot name="title" />
 
@@ -14,7 +14,7 @@
 
             <!-- End -->
         </UContainer>
-        <UContainer>
+        <UContainer class="basis-1/3 flex items-center justify-center">
             <hobbies />
         </UContainer>
     </div>

@@ -37,5 +37,5 @@ export default defineNuxtConfig({
     assets: {
       prefix: '/_fonts'
     }
-  }
+  },
 })
