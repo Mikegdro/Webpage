@@ -1,1 +1,0 @@
-import{_ as o,d as s,e as t,N as r}from"./BAYArnor.js";const n={},a={class:"font-extrabold"};function c(e,_){return t(),s("strong",a,[r(e.$slots,"default")])}const d=Object.assign(o(n,[["render",c]]),{__name:"ProseStrong"});export{d as default};

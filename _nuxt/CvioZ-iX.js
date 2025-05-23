@@ -1,1 +1,0 @@
-import{r as t}from"./BLhaFSX9.js";import{_ as o,d as r,e as s}from"./BAYArnor.js";import"./C--SOlcO.js";const n={},a={class:"text-5xl sm:text-6xl font-extrabold"};function c(e,_){return s(),r("h1",a,[t(e.$slots,"default",{mdcUnwrap:"h1"})])}const f=Object.assign(o(n,[["render",c]]),{__name:"ProseH1"});export{f as default};
