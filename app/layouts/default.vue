@@ -3,7 +3,7 @@
         <slot />
     </div> -->
     <UButton class="absolute mx-50 top-5 z-5 invisible" @click="changeBG()">Cambia el fondo</UButton>
-    <div class="fixed h-screen w-full bg-[url(/images/BG.jpg)] bg-cover bg-fixed bg-center bg-no-repeat" ref="bg"></div>
+    <div class="fixed h-screen w-full bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.7),rgba(255,255,255,0))] bg-cover bg-fixed bg-center bg-no-repeat" ref="bg"></div>
     <div class="relative dark:bg-default/20 bg-default/50">
         <slot />
     </div>
@@ -14,7 +14,7 @@
 
     const backgroundRef = useTemplateRef('bg');
 
-    const fondo = ref<'photo' | 'radiant'>('photo');
+    const fondo = ref<'photo' | 'radiant'>('radiant');
 
     function changeBG() {
         if (fondo.value === 'photo') {

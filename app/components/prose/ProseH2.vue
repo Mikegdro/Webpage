@@ -1,6 +1,6 @@
 <template>
     
-    <h2 :id="props.id" class="text-3xl">
+    <h2 :id="props.id" class="text-xl md:text-3xl">
         <UPopover mode="hover" :content="{ side: 'left' }">
             <NuxtLink v-if="props.id && generate" :to="`#${props.id}`">
                 <slot mdc-unwrap="h2"/>

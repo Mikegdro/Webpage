@@ -44,11 +44,11 @@ function downloadCV(cv: string) {
         <div class="introduction flex flex-col gap-5 basis-1/2 gap-5">
 
             <!-- Presentation -->
-            <div class="flex lg:flex-row flex-col gap-4 lg:items-stretch items-center justify-around">
-                <!-- <img :src="avatar" class="w-30 rounded-md aspect-square object-cover" /> -->
-                <div class="title text-center">
+            <div class="flex flex-row-reverse gap-4 items-stretch items-center justify-around">
+                <img :src="avatar" class="w-25 sm:w-30 rounded-md aspect-square object-cover" />
+                <div class="title w-full text-left md:text-center">
                     <slot name="title" />
-                    <p class="mt-2 font-thin flex flex-col items-center">
+                    <p class="mt-2 font-thin flex flex-col items-start md:items-center">
                         <slot name="description" mdc-unwrap="p" />
                         <UBadge class="mt-2">
                             <slot name="work" mdc-unwrap="p" />
