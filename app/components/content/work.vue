@@ -31,7 +31,7 @@ if (data.value) {
             dot: 'w-6 h-1'
         }"
     >             
-        <UCard variant="soft" class="hover:scale-[0.98] transition-all">
+        <UCard variant="subtle" class="hover:scale-[0.98] transition-all m-1">
             <template #header>
                 <div class="flex flex-col text-left">
                     <h3 class="dark:text-elevated text-lg">
