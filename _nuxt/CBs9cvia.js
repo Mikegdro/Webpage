@@ -1,1 +1,0 @@
-import{r as e}from"./cxJNbDVI.js";import{_ as s,d as o,e as r}from"./BS2dNUhE.js";import"./RKaBltCj.js";const n={},c={class:"text-sm sm:text-md mt-5 mb-2 font-light text-justify"};function a(t,m){return r(),o("p",c,[e(t.$slots,"default",{mdcUnwrap:"p"})])}const i=Object.assign(s(n,[["render",a]]),{__name:"ProseP"});export{i as default};

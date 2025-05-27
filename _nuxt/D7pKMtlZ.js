@@ -1,0 +1,1 @@
+import{r as s}from"./zdLWgtb2.js";import{_ as t,d as o,e as r}from"./Dw0IAJW4.js";import"./Dn4hRdwx.js";const n={},i={class:"list-disc list-inside text-sm font-thin"};function c(e,a){return r(),o("li",i,[s(e.$slots,"default",{mdcUnwrap:"li"})])}const m=Object.assign(t(n,[["render",c]]),{__name:"ProseLi"});export{m as default};
