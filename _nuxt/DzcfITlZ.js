@@ -1,1 +1,0 @@
-import{_ as s,d as a,e as o,N as r,n}from"./B0MCpfax.js";const c={};function t(e,d){return o(),a("code",{class:n(e.$props.class)},[r(e.$slots,"default",{},void 0,!0)],2)}const _=Object.assign(s(c,[["render",t],["__scopeId","data-v-2c539aed"]]),{__name:"ProseCode"});export{_ as default};

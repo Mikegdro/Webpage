@@ -1,1 +1,0 @@
-import{r as t}from"./D2D_6gqB.js";import{_ as o,d as r,e as s}from"./B0MCpfax.js";import"./HdcSbyRM.js";const n={},c={class:"text-md mt-5 mb-2 font-light"};function a(e,m){return s(),r("p",c,[t(e.$slots,"default",{mdcUnwrap:"p"})])}const l=Object.assign(o(n,[["render",a]]),{__name:"ProseP"});export{l as default};
