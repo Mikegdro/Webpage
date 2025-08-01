@@ -27,7 +27,7 @@ addEventListener('click', (ev: any) => {
 </script>
 
 <template>
-    <UDrawer should-scale-background ref="drawer" v-model:open="open" title="Menu" description="Tabla de contenidos y configuración" direction="left" inset>
+    <UDrawer should-scale-background ref="drawer" v-model:open="open" title="Navigation" description="Table of contents" direction="left" inset>
         <div class="fixed left-5 top-5 z-1">
             <UButton color="neutral" variant="outline" icon="i-lucide-menu" />
         </div>

@@ -28,7 +28,7 @@ if (data.value) {
             container: 'transition-[height]',
             controls: 'absolute -top-8 inset-x-12',
             dots: '-top-7',
-            dot: 'w-6 h-1'
+            dot: 'w-6 h-1 border-1 border-accented'
         }"
     >             
         <UCard variant="subtle" class="hover:scale-[0.98] transition-all m-1">

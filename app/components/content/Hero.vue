@@ -40,8 +40,8 @@ function downloadCV(cv: string) {
         </section>
     </div> -->
 
-    <UContainer as="section" class="hero flex lg:flex-row flex-col pt-25 pb-15 gap-5">
-        <div class="introduction flex flex-col gap-5 basis-1/2 gap-5">
+    <UContainer as="section" class="hero flex lg:flex-row flex-col pt-25 pb-15 gap-5 items-center">
+        <div class="introduction flex flex-col gap-5 basis-1/2">
 
             <!-- Presentation -->
             <div class="flex flex-row-reverse gap-4 items-stretch items-center justify-around">

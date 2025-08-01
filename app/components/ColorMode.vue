@@ -15,6 +15,7 @@
 <template>
     <ClientOnly v-if="!colorMode?.force">
         <UButton
+            class="self-start"
             :icon="isDark ? 'i-lucide-moon' : 'i-lucide-sun'"
             color="neutral"
             variant="ghost"
